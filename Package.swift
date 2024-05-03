@@ -4,15 +4,16 @@ import PackageDescription
 let package = Package(
     name: "SQLite.swift",
     platforms: [
-        .iOS(.v11),
+        .iOS(.v12),
         .macOS(.v10_13),
         .watchOS(.v4),
-        .tvOS(.v11),
+        .tvOS(.v12),
         .visionOS(.v1)
     ],
     products: [
         .library(
             name: "SQLite",
+            type: .dynamic,
             targets: ["SQLite"]
         )
     ],
